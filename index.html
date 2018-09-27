@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <div class="home">
+      <div class="mainTitle animated fadeIn slower delay-1s">
+        <h1>Привет, меня зовут</h1>
+        <h1>Сергей Фадеев,</h1>
+        <h1>я junior Front/Back-End Developer</h1>
+      </div>
+
+      <a href="#stack">
+        <div class="scrollDown">
+          <p>НИЖЕ</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="header">
+      <div class="container">
+        <div class="navbarName">
+          <a class="navbarBrand" href="index.html">Сергей Фадеев</a>
+        </div>
+        <div class="navbarNavigation">
+          <ul class="navbarUl">
+            <li class="current"><a href="#stack">STACK</a></li>
+            <li><a href="#works">WORKS</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#contacts">CONTACTS</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="stack" class="myStack">
+      <h1 class="stackH1">направления моей работы</h1>
+      <hr class="stackLine">
+      <br>
+      <p>Если вы говорите, что можете, — вы правы.</p>
+      <p>Если говорите, что не можете, — вы тоже правы.</p>
+      <br>
+      <p>*Генри Форд</p>
+      <div class="stackWrapper">
+        <div class="itemStack1">
+          <img src="images/frontend.png" alt="">
+          <p>Front-End</p>
+          <p>Разработка Front-End части проекта от верстки макета до реализации визуальных эффектов</p>
+        </div>
+        <div class="itemStack2">
+          <img src="images/backend.png" alt="">
+          <p>Back-End</p>
+          <p>Реализация Back-End составляющей проекта на стороне серевера/взаимодействие с базами данных</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="works" class="myWorks">
+      <h1 class="worksH1">портфолио</h1>
+      <hr class="stackLine">
+      <br>
+      <div class="worksWrapper">
+        <div class="itemWorks1">
+          <a href="https://github.com/Levron777/calendar"><img class="imgWorks1" src="images/calendar.png" alt=""></a>
+        </div>
+        <div class="itemWorks2">
+          <a href=""><img class="imgWorks2" src="images/site1.png" alt=""></a>
+        </div>
+        <div class="itemWorks3">
+          <a href="https://github.com/Levron777/n170118"><img src="images/site2.png" alt=""></a>
+        </div>
+        <div class="itemWorks4">
+          <a href="https://github.com/Levron777/mysite1"><img src="images/site3.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="skills" class="mySkills">
+      <h1 class="skillsH1">мои навыки</h1>
+      <hr class="stackLine">
+      <br>
+      <div class='skillsWrapper'>
+        <div class="itemSkills1">
+          <p>JavaScript</p> 
+          <img src="/images/stack/js.png" alt="">
+        </div>
+        <div class="itemSkills2">
+          <p>IQUERY</p> 
+          <img src="/images/stack/jquery.png" alt="">
+        </div>
+        <div class="itemSkills3">
+          <p>VUE JS</p> 
+          <img src="/images/stack/js.png" alt="">
+        </div>
+        <div class="itemSkills4">
+          <p>PHP</p> 
+          <img src="/images/stack/php.png" alt="">
+        </div>
+        <div class="itemSkills5">
+          <p>CSS GRID</p> 
+          <img src="/images/stack/grid.png" alt="">
+        </div>
+        <div class="itemSkills6">
+          <p>HTML5</p> 
+          <img src="/images/stack/js.png" alt="">
+        </div>
+        <div class="itemSkills7">
+          <p>CSS3</p> 
+          <img src="/images/stack/css.png" alt="">
+        </div>
+        <div class="itemSkills8">
+          <p>Bootstrap</p> 
+          <img src="/images/stack/Bootstrap.png" alt="">
+        </div>
+        <div class="itemSkills9">
+          <p>MySQL</p>
+          <img src="/images/stack/mysql.png" alt="">
+        </div>
+        <div class="itemSkills10">
+          <p>GIT</p> 
+          <img src="/images/stack/Github.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div id="contacts" class="myContacts">
+      <h1 class="contactsH1">контакты</h1>
+      <hr class="stackLine">
+      <br>
+      <div class="contactsWrapper">
+        <div class="contactsEmail">
+          <img class="emailShow" src="images/Email.png" alt="">
+          <p class="email none">SAFadeev2704@gmail.com</p>
+          <button class="emailShow">Показать Email</button>
+        </div>
+        <div class="contactsVK">
+          <a href="https://vk.com/levron1987"><img src="images/vk.png" alt=""></a>
+          <a href="https://vk.com/levron1987"><p>Перейти на мою страницу ВКонтакте</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="script/script.js"></script>
+</body>
+</html>
