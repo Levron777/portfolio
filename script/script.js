@@ -174,5 +174,24 @@ $(document).ready( function() {
     }
   });
 
+  // Анимация прокрутки в начало
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 200) {
+      $('.scroll-up').fadeIn();
+    } else {
+      $('.scroll-up').fadeOut();
+    }
+  });
+
+  $(function(){
+    $('a[href^="#"]').on('click', function(event) {
+      event.preventDefault();
+      var sc = $(this).attr("href");
+      var dn = $(sc).offset().top;
+      $('html, body').animate({scrollTop: dn}, 1000);
+    });
+  });
+
 });
 

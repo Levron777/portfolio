@@ -39,6 +39,8 @@ a {
   margin: 10px;
 }
 
+/* Стили scrollDown */
+
 .scrollDown {
   position: absolute;
   left: 50%;
@@ -50,8 +52,11 @@ a {
   margin-left: -15px;
   display: block;
   z-index: 10;
-  text-align: center;
+}
+
+.scrollDown p {
   color: white;
+  text-transform: uppercase;
 }
 
 /* Стили шапки/навигационной панели */
@@ -208,19 +213,22 @@ li {
 
 .skillsWrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   grid-template-rows: auto;
   grid-row-gap: 20px;
   grid-column-gap: 20px;
-  justify-items: center;
   margin: 80px auto;
   width: 90%;
 }
 
-.itemSkills1, .itemSkills2, .itemSkills3, .itemSkills4, .itemSkills5, .itemSkills6, .itemSkills7, 
-.itemSkills8, .itemSkills9, .itemSkills10  {
+.item  {
   background-color: white;
   border-radius: 10px;
+  width: 100px;
+}
+
+.item img {
+  width: 80px;
 }
 
 .skillsWrapper p {
@@ -276,6 +284,16 @@ li {
   letter-spacing: 2px;
   background-color: white;
   border-radius: 5px;
+  box-shadow: none;
+  border-style: none;
+}
+
+.contactsEmail button:hover {
+  color: rgb(214, 0, 0);
+}
+
+.contactsEmail button:focus {
+  outline-style: none;
 }
 
 .contactsVK p {
@@ -299,4 +317,26 @@ li {
 	top: 0;
   left: 0;
   z-index: 999;
+}
+
+/* Анимация прокрутки в начало */
+
+.scroll-up {
+  position: fixed;
+	display: none;
+	z-index: 999;
+	bottom: 2em;
+	right: 2em;
+}
+
+.scroll-up a {
+  background-color: white;
+	display: block;
+	width: 48px;
+  height: 48px;
+  border-radius: 25px;
+}
+
+.scroll-up a:hover {
+  background-color: rgba(235, 235, 235, .8);
 }
